@@ -59,5 +59,5 @@ There are a few small points worth noting about this setup:
 ## 🔗 Projects Using This Workflow
 
 * [PixiJS](https://github.com/pixijs/pixijs)
-* [PixiJS Filter](https://github.com/pixijs/filters)
+* [PixiJS Filters](https://github.com/pixijs/filters)
 
