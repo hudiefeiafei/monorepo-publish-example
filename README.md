@@ -2,16 +2,16 @@
 
 The purpose of this repo is to demonstrate a minimum working example of publishing to npm with a monorepo on GitHub Actions using Lerna. 
 
-## Requirements
+## 📋 Requirements
 
 * Lerna installed
 * npm v7+ for package-management
 * GitHub repository
 * npmjs.com account
 
-## Setup
+## ⚙️ Setup
 
-### Create Access Token for npm
+### 🔑  Create Access Token for npm
 
 An access token is required for publishing to npm with GitHub Actions. You can create a new token by:
 
@@ -22,7 +22,7 @@ An access token is required for publishing to npm with GitHub Actions. You can c
 5. Choose "Automation" from the options
 6. Copy the Access Token
 
-### Add Secret to Repository
+### 🤫  Add Secret to Repository
 
 With the access token created for npm, you need to create a "secret" that can be used by GitHub Actions. To add the secret:
 
@@ -35,7 +35,7 @@ With the access token created for npm, you need to create a "secret" that can be
 
 Now you are ready to publish to npm on GitHub!
 
-## Workflow
+## 🏃 Workflow
 
 ### 1. Version Bump
 
@@ -49,7 +49,7 @@ From GitHub, create a new release using the existing tag that was pushed.
 
 This should kick off the GitHub Actions and publish the result to npm.
 
-## Gotchas
+## 😈 Gotchas
 
 There are a few small points worth noting about this setup:
 
