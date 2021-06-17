@@ -6,12 +6,12 @@ The purpose of this repo is to demonstrate a minimum working example of publishi
 
 * Lerna installed
 * npm v7+ for package-management
-* GitHub repo
+* GitHub repository
 * npmjs.com account
 
 ## Setup
 
-### Create npm Access Token
+### Create Access Token for npm
 
 An access token is required for publishing to npm with GitHub Actions. You can create a new token by:
 
@@ -22,7 +22,7 @@ An access token is required for publishing to npm with GitHub Actions. You can c
 5. Choose "Automation" from the options
 6. Copy the Access Token
 
-### Add Secret
+### Add Secret to Repository
 
 With the access token created for npm, you need to create a "secret" that can be used by GitHub Actions. To add the secret:
 
@@ -37,11 +37,17 @@ Now you are ready to publish to npm on GitHub!
 
 ## Workflow
 
+### 1. Version Bump
+
 In order to publish a new release run `npm run release` locally, this will take you through the Lerna workflow for doing a version bump. Once that's done, your version will get tagged and pushed to GitHub.
+
+### 2. Create Release
 
 From GitHub, create a new release using the existing tag that was pushed.
 
-This should kick off the GitHub Actions and publish the result. 
+### 3. Automated Publish
+
+This should kick off the GitHub Actions and publish the result to npm.
 
 ## Gotchas
 
