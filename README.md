@@ -55,3 +55,9 @@ There are a few small points worth noting about this setup:
 
 * Lerna has a [problem](https://github.com/lerna/lerna/issues/2891) with npm 7+ which doesn't uppdate the lock file, this creates issues on GitHub Actions by having an unclean workspace. To get around this, we manually do the tagging ourselves (see [scripts/tag-release.sh](scripts/tag-release.sh)).
 * If using scoped packages, make sure `"publishConfig": { "access": "public" }` is added to each package, as Lerna will assume scoped packages are private by default.
+
+## 🔗 Projects Using This Workflow
+
+* [PixiJS](https://github.com/pixijs/pixijs)
+* [PixiJS Filter](https://github.com/pixijs/filters)
+
