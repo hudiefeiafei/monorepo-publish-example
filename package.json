@@ -1,0 +1,27 @@
+{
+  "name": "monorepo-publish-example",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "release": "lerna version --exact --force-publish --no-push --no-git-tag-version",
+    "postrelease": "./scripts/tag-release.sh",
+    "publish-ci": "lerna publish from-package --yes --no-verify-access"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigtimebuddy/monorepo-publish-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bigtimebuddy/monorepo-publish-example/issues"
+  },
+  "homepage": "https://github.com/bigtimebuddy/monorepo-publish-example#readme",
+  "devDependencies": {
+    "lerna": "^3.13.3"
+  }
+}

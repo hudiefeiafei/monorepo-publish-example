@@ -1,0 +1,28 @@
+name: Build
+
+on:
+  release:
+    types: [ published ]
+jobs:
+  build:
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN || '' }}
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12
+        registry-url: 'https://registry.npmjs.org'
+    - name: Install npm
+      run: npm install -g npm@7
+    - name: Install Dependencies
+      run: npm install
+    - name: Publish Latest Release
+      if: github.event.release.prerelease == false && env.NODE_AUTH_TOKEN != ''
+      run: npm run publish-ci
+    - name: Publish Latest Prerelease
+      if: github.event.release.prerelease && env.NODE_AUTH_TOKEN != ''
+      run: npm run publish-ci -- --dist-tag prerelease

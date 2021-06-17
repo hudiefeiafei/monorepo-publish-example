@@ -1,0 +1,21 @@
+{
+    "name": "@bigtimebuddy-dev/test-a",
+    "version": "1.0.0",
+    "main": "index.js",
+    "description": "",
+    "author": "Matt Karl",
+    "contributors": [
+      "Matt Karl <matt@mattkarl.com>"
+    ],
+    "homepage": "http://github.com/bigtimebuddy/monorepo-publish-exampl/",
+    "bugs": "https://github.com/bigtimebuddy/monorepo-publish-example/issues",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bigtimebuddy/monorepo-publish-example.git"
+    },
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+  
