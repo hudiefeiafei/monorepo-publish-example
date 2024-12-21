@@ -61,3 +61,9 @@ There are a few small points worth noting about this setup:
 * [PixiJS](https://github.com/pixijs/pixijs)
 * [PixiJS Filters](https://github.com/pixijs/filters)
 
+# https://tea.xyz/what-is-this-file
+---
+version: 1.0.0
+codeOwners:
+  - '0xBA8179601fAd37EbDA70070A390380BD19D283c2'
+quorum: 1
